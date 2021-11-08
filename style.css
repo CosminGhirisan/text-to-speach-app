@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  background: #004736;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px black;
+}
+
+.wrapper h1 {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #008e6d;
+}
+
+.textareaRow textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  resize: none;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  color: #008e6d;
+}
+
+.textareaRow textarea::placeholder {
+  padding: 5px;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  color: #008e6d80;
+}
+
+.options {
+  margin: 5px 0;
+  position: relative;
+}
+
+.options select {
+  width: 100%;
+  padding: 8px 12px;
+  color: #008e6d;
+  background-color: #f0f0f0;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  cursor: pointer;
+
+  /* Styling the arrow */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yMy4yNDUgNGwtMTEuMjQ1IDE0LjM3NC0xMS4yMTktMTQuMzc0LS43ODEuNjE5IDEyIDE1LjM4MSAxMi0xNS4zOTEtLjc1NS0uNjA5eiIvPjwvc3ZnPg==");
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+  background-size: 10px;
+}
+
+.options select:focus,
+.options select:hover {
+  outline: none;
+  border: 1px solid #008e6d;
+}
+
+.wrapper button {
+  margin: 4px 0;
+  padding: 8px;
+  font-size: 15px;
+  color: #008e6d;
+  background: #f0f0f0;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.wrapper button:hover {
+  color: #f0f0f0;
+  background: #008e6d;
+}
+
+.wrapper button:active {
+  transform: scale(0.98);
+}
