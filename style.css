@@ -58,6 +58,7 @@ body {
 
 .options select {
   width: 100%;
+  font-size: 12px;
   padding: 8px 12px;
   color: #008e6d;
   background-color: #f0f0f0;
@@ -79,6 +80,12 @@ body {
 .options select:hover {
   outline: none;
   border: 1px solid #008e6d;
+}
+
+.options select:disabled,
+textarea:disabled {
+  color: #f0f0f0;
+  background: #d1d1d1;
 }
 
 .wrapper button {
